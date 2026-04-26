@@ -37,9 +37,11 @@ body {
 
 .playerContainer {
     display: flex;
+    height: 85vh;
     border-radius: 10px;
     border-style: ridge;
     padding-left: 40px;
+    padding-right: 40px;
     padding-top: 20px;
     margin: 20px;
     border-color: rgb(39, 39, 63);
@@ -49,6 +51,11 @@ body {
 
 .player {
     aspect-ratio: 16 / 9;
+    align-items: center;
+    justify-content: center;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: rgb(39, 39, 63);
 
 }
 
@@ -57,6 +64,7 @@ body {
 .episodeListContainer {
     display: flex;
     flex-direction: column;
+    height: 85vh;
     border-radius: 10px;
     border-style: ridge;
     padding-top: 20px;
@@ -64,5 +72,18 @@ body {
     margin: 20px;
     border-color: rgb(39, 39, 63);
     background-color: rgb(20, 20, 32);
+    overflow-y: scroll;
 
+}
+
+.episodeItem {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: rgb(39, 39, 63);
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
